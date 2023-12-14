@@ -1,51 +1,92 @@
-<!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Photography Portfolio</title>
-<style>
-    body { font-family: 'Arial', sans-serif; }
-    .header { text-align: center; padding: 20px; }
-    .navigation { background: #333; overflow: hidden; }
-    .navigation a { float: left; display: block; color: white; text-align: center; padding: 14px 20px; text-decoration: none; }
-    .navigation a:hover { background-color: #ddd; color: black; }
-    .gallery { display: flex; flex-wrap: wrap; padding: 0 4px; }
-    .column { flex: 50%; max-width: 50%; padding: 0 4px; }
-    .column img { margin-top: 8px; vertical-align: middle; width: 100%; }
-    @media screen and (max-width: 800px) {
-        .column { flex: 100%; max-width: 100%; }
-    }
-</style>
-</head>
-<body>
-
-<div class="header">
-  <h1>LAURENNAYLOR</h1>
-</div>
-
-<div class="navigation">
-  <a href="#editorial">Editorial</a>
-  <a href="#lifestyle">Lifestyle</a>
-  <a href="#beauty">Beauty</a>
-  <!-- Add other navigation links here -->
-</div>
-
-<!-- Gallery -->
-<div class="gallery">
-  <div class="column">
-    <img src="path_to_image1.jpg" alt="Editorial">
-    <img src="path_to_image2.jpg" alt="Lifestyle">
-  </div>  
-  <div class="column">
-    <img src="path_to_image3.jpg" alt="Beauty">
-    <img src="path_to_image4.jpg" alt="Motion">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Photography Portfolio
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Playfair Display', serif;
+        }
+  </style>
+ </head>
+ <body class="bg-gray-50">
+  <div class="container mx-auto px-6 lg:px-8">
+   <div class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-12 gap-6 py-12">
+    <!-- Sidebar -->
+    <div class="col-span-1 md:col-span-4 lg:col-span-3">
+     <h1 class="text-5xl uppercase tracking-widest mb-6">
+      Laurennaylor
+     </h1>
+     <nav class="mb-6">
+      <ul class="space-y-4">
+       <li>
+        Editorial
+       </li>
+       <li>
+        Lifestyle
+       </li>
+       <li>
+        Beauty
+       </li>
+       <li>
+        Motion
+       </li>
+       <li>
+        Music
+       </li>
+       <li>
+        Product Still Life
+       </li>
+       <li>
+        Fine Art/Personal
+       </li>
+       <li>
+        About + Contact
+       </li>
+      </ul>
+     </nav>
+     <div class="flex items-center space-x-2 mb-6">
+      <i class="fab fa-instagram">
+      </i>
+      <i class="fab fa-twitter">
+      </i>
+      <span class="text-sm">
+       share
+      </span>
+     </div>
+     <div class="text-xs">
+      © 2023 Lauren Naylor Photography
+     </div>
+    </div>
+    <!-- Main Content -->
+    <div class="col-span-1 md:col-span-4 lg:col-span-9 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+     <!-- Image 1 -->
+     <div class="col-span-1 lg:col-span-2 row-span-2">
+      <img alt="Fashion model in a yellow patterned jacket with blue eye makeup looking over shoulder with a vintage carpet background" class="w-full h-full object-cover" height="800" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-sSsOulEoQY3dXtF2RiaK66Ja/user-XZ7Av8ZH1bvGvI0GdH7WwbAs/img-kwPy8CHc7LYauzvxsQrtCaJ5.png?st=2023-12-14T13%3A40%3A07Z&amp;se=2023-12-14T15%3A40%3A07Z&amp;sp=r&amp;sv=2021-08-06&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2023-12-14T14%3A13%3A42Z&amp;ske=2023-12-15T14%3A13%3A42Z&amp;sks=b&amp;skv=2021-08-06&amp;sig=4bh%2BUPfrOZoLIY%2BXs%2BQ5XqiiCJIplTdYKEPo9gQcwik%3D" width="600"/>
+     </div>
+     <!-- Image 2 -->
+     <div class="col-span-1">
+      <img alt="Fashion model in a green blazer over a gold top with a colorful painted backdrop" class="w-full h-full object-cover mb-6" height="400" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-sSsOulEoQY3dXtF2RiaK66Ja/user-XZ7Av8ZH1bvGvI0GdH7WwbAs/img-6zgz8tSpuM4JDTKPNdYLwXoe.png?st=2023-12-14T13%3A40%3A00Z&amp;se=2023-12-14T15%3A40%3A00Z&amp;sp=r&amp;sv=2021-08-06&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2023-12-14T13%3A43%3A49Z&amp;ske=2023-12-15T13%3A43%3A49Z&amp;sks=b&amp;skv=2021-08-06&amp;sig=IhV7eJU1rK4yXjRIu7%2BQoBcKXsKxnKn3%2Bm9M/q3zgvA%3D" width="300"/>
+      <img alt="Fashion model in a red suit with blurred motion effect" class="w-full h-full object-cover" height="400" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-sSsOulEoQY3dXtF2RiaK66Ja/user-XZ7Av8ZH1bvGvI0GdH7WwbAs/img-pnYLdOWuCYYO0vrXIMOltdOM.png?st=2023-12-14T13%3A39%3A56Z&amp;se=2023-12-14T15%3A39%3A56Z&amp;sp=r&amp;sv=2021-08-06&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2023-12-14T12%3A46%3A59Z&amp;ske=2023-12-15T12%3A46%3A59Z&amp;sks=b&amp;skv=2021-08-06&amp;sig=6VgSbP4eLIaHbX1VBNb0RdoMr7fLc7yAoQE/zDJJRcA%3D" width="300"/>
+     </div>
+     <!-- Image 3 -->
+     <div class="col-span-1 lg:col-span-2">
+      <img alt="Person in white outfit sitting next to a vintage television in a desert setting" class="w-full h-full object-cover mb-6" height="400" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-sSsOulEoQY3dXtF2RiaK66Ja/user-XZ7Av8ZH1bvGvI0GdH7WwbAs/img-6HXovn8OIyPP5ocSH7LoG1q5.png?st=2023-12-14T13%3A40%3A01Z&amp;se=2023-12-14T15%3A40%3A01Z&amp;sp=r&amp;sv=2021-08-06&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2023-12-14T12%3A47%3A37Z&amp;ske=2023-12-15T12%3A47%3A37Z&amp;sks=b&amp;skv=2021-08-06&amp;sig=YI03Xe12BPp0CPU%2BXsDx70pmqPwODLwbpSiclgJ4GNo%3D" width="600"/>
+      <img alt="Fashion model standing in front of a canvas with abstract painting, wearing a dress with similar abstract design" class="w-full h-full object-cover" height="400" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-sSsOulEoQY3dXtF2RiaK66Ja/user-XZ7Av8ZH1bvGvI0GdH7WwbAs/img-AR1rXy5AhiXvfvWnGAQ9BQQ0.png?st=2023-12-14T13%3A40%3A01Z&amp;se=2023-12-14T15%3A40%3A01Z&amp;sp=r&amp;sv=2021-08-06&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2023-12-14T14%3A11%3A56Z&amp;ske=2023-12-15T14%3A11%3A56Z&amp;sks=b&amp;skv=2021-08-06&amp;sig=bUk0DLil3E8QVhMenZedG609ITrBldqiKE5uBx9NWBk%3D" width="600"/>
+     </div>
+     <!-- Image 4 -->
+     <div class="col-span-1">
+      <img alt="Two models posing together under a tree, one in a green jacket and the other in a purple jacket" class="w-full h-full object-cover mb-6" height="400" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-sSsOulEoQY3dXtF2RiaK66Ja/user-XZ7Av8ZH1bvGvI0GdH7WwbAs/img-9nBpxN097Vo8S95RiLZ9bK0q.png?st=2023-12-14T13%3A39%3A57Z&amp;se=2023-12-14T15%3A39%3A57Z&amp;sp=r&amp;sv=2021-08-06&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2023-12-14T12%3A47%3A16Z&amp;ske=2023-12-15T12%3A47%3A16Z&amp;sks=b&amp;skv=2021-08-06&amp;sig=T30GfHYhkNO0H59jN6mcUYd9xuezHrrVV0/cXzsEEnQ%3D" width="300"/>
+      <img alt="Close-up of a model with slicked-back hair and large hoop earrings, looking to the side" class="w-full h-full object-cover" height="400" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-sSsOulEoQY3dXtF2RiaK66Ja/user-XZ7Av8ZH1bvGvI0GdH7WwbAs/img-TmD5CPjmyhdnmxARl1DJxIzO.png?st=2023-12-14T13%3A39%3A57Z&amp;se=2023-12-14T15%3A39%3A57Z&amp;sp=r&amp;sv=2021-08-06&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2023-12-14T12%3A46%3A51Z&amp;ske=2023-12-15T12%3A46%3A51Z&amp;sks=b&amp;skv=2021-08-06&amp;sig=T4bEcHJjKsYPpEvdsxMgcPsIwlU51Un2ucO8htlT4zo%3D" width="300"/>
+     </div>
+    </div>
+   </div>
   </div>
-</div>
-
-<footer>
-  <p>© 2023 Lauren Naylor Photography</p>
-</footer>
-
-</body>
+ </body>
 </html>
+
