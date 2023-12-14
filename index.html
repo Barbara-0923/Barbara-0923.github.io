@@ -9,9 +9,13 @@
         body {
             font-family: 'Playfair Display', serif;
         }
-        .image-size {
+        .image-size1 {
             height: 500px; /* Restricting the height */
             width: auto; /* Maintain the aspect ratio */
+        }
+        .image-size2 {
+            height: auto; /* Restricting the height */
+            width: 500; /* Maintain the aspect ratio */
         }
     </style>
 </head>
@@ -37,10 +41,10 @@
                 <!-- Main Content -->
                 <div class="col-span-1 md:col-span-4 lg:col-span-9 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
                     <!-- Images with restricted size -->
-                    <img src="photo1a.jpeg" alt="Description" class="image-size col-span-2">
-                    <img src="photo2b.jpeg" alt="Description" class="image-size col-span-2">
-                    <img src="photo3a.jpeg" alt="Description" class="image-size col-span-2">
-                    <img src="photo4b.jpeg" alt="Description" class="image-size col-span-2">
+                    <img src="photo1a.jpeg" alt="Description" class="image-size1 col-span-2">
+                    <img src="photo2b.jpeg" alt="Description" class="image-size2 col-span-2">
+                    <img src="photo3a.jpeg" alt="Description" class="image-size1 col-span-2">
+                    <img src="photo4b.jpeg" alt="Description" class="image-size2 col-span-2">
                     <!-- ... more images ... -->
                 </div>
             </div>
