@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Playfair Display', serif;
+        }
+        .image-size1 {
+            height: 500px; /* Restricting the height */
+            width: auto; /* Maintain the aspect ratio */
+        }
+        .image-size2 {
+            width: 1000px;
+            height: auto; 
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <div class="container mx-auto px-4 lg:px-6">
+        <div class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-12 gap-6 py-10">
+            <!-- Sidebar -->
+            <div class="col-span-1 md:col-span-4 lg:col-span-3">
+              <h1 class="text-4xl uppercase tracking-widest mb-6">
+                <a href="/Barbara Wang.html" class="hover:underline">Barbara Wang</a>
+            </h1>
+                <nav class="mb-6">
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="/views.html" class="hover:underline">Views</a></li>
+                        <li><a href="/friends.html" class="hover:underline">Friends</a></li>
+                        <li><a href="/others.html" class="hover:underline">Others</a></li>
+                        <li><a href="/film camera.html" class="hover:underline">Film Camera</a></li>
+                        <li><a href="/about-contact.html" class="hover:underline">About + Contact</a></li>
+                      </ul>
+                    </nav>
+                    <div class="text-xs">© 2023 Barbara Wang Photography</div>
+                </div>
+                <!-- Main Content -->
+                <div class="col-span-1 md:col-span-4 lg:col-span-9 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
+                    <!-- Images with restricted size -->
+                    <img src="photo2a.jpeg" alt="Description" class="image-size1 col-span-2">
+                    <img src="photo2b.jpeg" alt="Description" class="image-size2 col-span-2">
+                   <div class="col-span-1 md:col-span-4 lg:col-span-9 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
+                    <img src="photo2c.jpeg" alt="Description" class="image-size1 col-span-2">
+                    <img src="photo2d.jpeg" alt="Description" class="image-size2 col-span-2">
+                    <!-- ... more images ... -->
+                </div>
+            </div>
+        </div>
+    </body>
+    </html>
